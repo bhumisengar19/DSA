@@ -6,29 +6,22 @@ Time Complexity: O(n)
 Space Complexity: O(1)
 */
 
-#include <stdlib.h>
-
-int* twoSum(int* numbers, int numbersSize, int target, int* returnSize) {
-    int left = 0, right = numbersSize - 1;
-    int* result = (int*)malloc(2 * sizeof(int));
-
-    while(left < right) {
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& numbers, int target) {
+       int left = 0;
+       int right = numbers.size() - 1;
+       while (left<right){
         int sum = numbers[left] + numbers[right];
-
-        if(sum == target) {
-            result[0] = left + 1;
-            result[1] = right + 1;
-            *returnSize = 2;
-            return result;
-        }
-        else if(sum < target) {
+        if(sum == target){
+            return { left+1 , right+1};
+        } else if(sum < target){
             left++;
         }
-        else {
+        else{
             right--;
         }
+       }
+       return{};
     }
-
-    *returnSize = 0;
-    return NULL;
-}
+};

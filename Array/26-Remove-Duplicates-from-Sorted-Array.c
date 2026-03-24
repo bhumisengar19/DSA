@@ -6,17 +6,19 @@ Approach: Two Pointers
 Time Complexity: O(n)
 Space Complexity: O(1)
 */
-
-int removeDuplicates(int* nums, int numsSize) {
-
-    int i = 0;   // pointer to last unique element
-
-    for(int j = 1; j < numsSize; j++) {
-        if(nums[j] != nums[i]) {
-            i++;
-            nums[i] = nums[j];
+class Solution {
+public:
+    int removeDuplicates(vector<int>& nums) {
+        if(nums.size() == 0){
+            return 0;
         }
+        int i=0;
+        for (int j=1; j< nums.size(); j++){
+            if (nums[j] != nums[i]){
+                i++;
+                nums[i] = nums[j];
+            }
+        }
+        return i+1;
     }
-
-    return i + 1;
-}
+};

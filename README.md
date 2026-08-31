@@ -17,13 +17,12 @@ This repository contains my solutions to a wide range of **Data Structures and A
 ## 🧠 Topics Covered
 
 ### 📂 Array
-
-* 🔹 LC15 – 3Sum
-* 🔹 LC16 – 3Sum Closest
 * 🔹 LC167 – Two Sum II
 * 🔹 LC26 – Remove Duplicates from Sorted Array
 * 🔹 LC88 – Merge Sorted Array
 * 🔹 LC977 – Squares of a Sorted Array
+* 🔹 LC15 – 3Sum
+* 🔹 LC16 – 3Sum Closest
 
 ---
 

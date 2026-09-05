@@ -1,15 +1,12 @@
 /*
 LeetCode Problem: 15. 3Sum
 Link: https://leetcode.com/problems/3sum/
-
 Approach:
 - Sort the array
 - Fix one element and use two pointers (left & right)
 - Avoid duplicates
-
 Time Complexity: O(n^2)
 Space Complexity: O(1) (excluding result)
-
 */
 class Solution {
 public:

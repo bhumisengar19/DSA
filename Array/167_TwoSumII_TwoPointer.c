@@ -5,7 +5,6 @@ Approach: Two Pointers
 Time Complexity: O(n)
 Space Complexity: O(1)
 */
-
 class Solution {
 public:
     vector<int> twoSum(vector<int>& numbers, int target) {
